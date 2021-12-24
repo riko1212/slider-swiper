@@ -1,0 +1,51 @@
+p,
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.wrapper {
+    width: 800px;
+    outline: 2px solid red;
+    margin: 0 auto;
+}
+
+.item {
+    width: 800px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 72px;
+}
+
+.blue {
+    background-color: blue;
+}
+.red {
+    background-color: red;
+}
+.brown {
+    background-color: brown;
+}
+.tomato {
+    background-color: tomato;
+}
+.green {
+    background-color: green;
+}
+.yellow {
+    background-color: yellow;
+}
+.violet {
+    background-color: violet;
+}
+.gray {
+    background-color: gray;
+}
