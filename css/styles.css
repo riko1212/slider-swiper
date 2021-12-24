@@ -49,3 +49,18 @@ body {
 .gray {
     background-color: gray;
 }
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: indianred;
+    display: block;
+}
+
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    background-color: indigo;
+}
