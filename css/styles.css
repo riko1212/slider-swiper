@@ -2,65 +2,60 @@ p,
 h1,
 h2,
 h3 {
-    margin: 0;
+  margin: 0;
 }
 
 body {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 .wrapper {
-    width: 800px;
-    outline: 2px solid red;
-    margin: 0 auto;
+  width: 800px;
+  outline: 2px solid red;
+  margin: 0 auto;
 }
 
 .item {
-    width: 800px;
-    height: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    font-size: 72px;
+  width: 800px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 72px;
 }
 
 .blue {
-    background-color: blue;
+  background-color: blue;
 }
 .red {
-    background-color: red;
+  background-color: red;
 }
 .brown {
-    background-color: brown;
+  background-color: brown;
 }
 .tomato {
-    background-color: tomato;
+  background-color: tomato;
 }
 .green {
-    background-color: green;
+  background-color: green;
 }
 .yellow {
-    background-color: yellow;
+  background-color: yellow;
 }
 .violet {
-    background-color: violet;
+  background-color: violet;
 }
 .gray {
-    background-color: gray;
+  background-color: gray;
 }
 
-.swiper-button-next:after,
-.swiper-rtl .swiper-button-prev:after {
-    content: "";
-    width: 40px;
-    height: 40px;
-    background-color: indianred;
-    display: block;
+.swiper-pagination-bullet-active {
+  width: 12px;
+  height: 12px;
+  background-color: coral;
 }
 
-.swiper-pagination-bullet {
-    width: 20px;
-    height: 20px;
-    background-color: indigo;
+.swiper-cube .swiper-slide {
+  height: 800px;
 }

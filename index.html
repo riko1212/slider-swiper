@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            href="https://unpkg.com/swiper/swiper-bundle.min.css"
-        />
-        <link rel="stylesheet" href="./css/styles.css" />
-        <title>Document</title>
-    </head>
-    <body>
-        <div class="swiper mySwiper wrapper">
-            <div class="swiper-wrapper">
-                <div class="item blue swiper-slide">1</div>
-                <div class="item red swiper-slide">2</div>
-                <div class="item brown swiper-slide">3</div>
-                <div class="item tomato swiper-slide">4</div>
-                <div class="item green swiper-slide">5</div>
-                <div class="item yellow swiper-slide">6</div>
-                <div class="item violet swiper-slide">7</div>
-                <div class="item gray swiper-slide">8</div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-        </div>
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script>
-            var swiper = new Swiper(".mySwiper", {
-                loop: true,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                    // renderBullet: function (index, className) {
-                    //     return (
-                    //         '<span class="' +
-                    //         className +
-                    //         '">' +
-                    //         (index + 1) +
-                    //         "</span>"
-                    //     );
-                    // },
-                },
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-            });
-        </script>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="item blue swiper-slide">1</div>
+        <div class="item red swiper-slide">2</div>
+        <div class="item brown swiper-slide">3</div>
+        <div class="item tomato swiper-slide">4</div>
+        <div class="item greene swiper-slide">5</div>
+        <div class="item yellow swiper-slide">6</div>
+        <div class="item violet swiper-slide">7</div>
+        <div class="item gray swiper-slide">8</div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cube",
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        loop: true,
+        grabCursor: true,
+        cubeEffect: {
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
 </html>
