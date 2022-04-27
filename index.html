@@ -32,12 +32,16 @@
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
-        effect: "cube",
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        loop: true,
         autoplay: {
           delay: 2500,
           disableOnInteraction: false,
         },
-        loop: true,
+        effect: "cube",
         grabCursor: true,
         cubeEffect: {
           shadow: true,
@@ -47,6 +51,7 @@
         },
         pagination: {
           el: ".swiper-pagination",
+          clickable: true,
         },
       });
     </script>
