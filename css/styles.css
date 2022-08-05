@@ -50,11 +50,12 @@ body {
   background-color: gray;
 }
 
-/* .swiper-button-next:after,
-.swiper-rtl .swiper-button-prev:after {
-  content: "";
-  width: 40px;
-  height: 40px;
-  display: block;
-  background-color: purple;
-} */
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+}
+
+.swiper-pagination-bullet-active {
+  background-image: url(https://picsum.photos/200/300);
+  background-size: cover;
+}
