@@ -1,8 +1,10 @@
 p,
 h1,
 h2,
-h3 {
+h3,
+ul {
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -50,12 +52,9 @@ body {
   background-color: gray;
 }
 
-.swiper-pagination-clickable .swiper-pagination-bullet {
-  width: 15px;
-  height: 15px;
-}
-
-.swiper-pagination-bullet-active {
-  background-image: url(https://picsum.photos/200/300);
-  background-size: cover;
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: '';
+  color: #ffffff;
+  font-family: serif;
 }
