@@ -12,8 +12,8 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="swiper mySwiper wrapper">
-      <ul class="swiper-wrapper">
+    <div class="wrapper swiper myS">
+      <ul class="list swiper-wrapper">
         <li class="item blue swiper-slide">1</li>
         <li class="item red swiper-slide">2</li>
         <li class="item brown swiper-slide">3</li>
@@ -23,20 +23,22 @@
         <li class="item violet swiper-slide">7</li>
         <li class="item gray swiper-slide">8</li>
       </ul>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
     </div>
+    <div class="swiper-pagination"></div>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper('.mySwiper', {
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+      const swiper = new Swiper('.myS', {
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
         },
         loop: true,
         autoplay: {
           delay: 500,
+          pauseOnMouseEnter: true,
         },
+        speed: 100,
+        autoplaySpeed: 500,
       });
     </script>
   </body>

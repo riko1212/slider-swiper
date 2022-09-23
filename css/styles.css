@@ -12,14 +12,14 @@ body {
 }
 
 .wrapper {
-  width: 800px;
+  width: 500px;
   outline: 2px solid red;
   margin: 0 auto;
 }
 
 .item {
-  width: 800px;
-  height: 800px;
+  width: 500px;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,9 +52,14 @@ body {
   background-color: gray;
 }
 
-.swiper-button-next:after,
-.swiper-rtl .swiper-button-prev:after {
-  content: '';
-  color: #ffffff;
-  font-family: serif;
+.swiper-pagination-bullet {
+  width: 30px;
+  height: 30px;
+}
+
+.swiper-pagination-bullet-active {
+  background-image: url(https://picsum.photos/seed/picsum/200/300);
+  background-size: cover;
+  background-position: center;
+  border-radius: unset;
 }
