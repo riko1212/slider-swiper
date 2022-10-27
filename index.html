@@ -12,7 +12,7 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="wrapper swiper myS">
+    <div class="swiper mySwiper wrapper">
       <ul class="list swiper-wrapper">
         <li class="item blue swiper-slide">1</li>
         <li class="item red swiper-slide">2</li>
@@ -24,21 +24,51 @@
         <li class="item gray swiper-slide">8</li>
       </ul>
     </div>
-    <div class="swiper-pagination"></div>
+
+    <div class="swiper mySw wrapper">
+      <ul class="list swiper-wrapper">
+        <li class="item blue swiper-slide"></li>
+        <li class="item red swiper-slide">2</li>
+        <li class="item brown swiper-slide">3</li>
+        <li class="item tomato swiper-slide">4</li>
+        <li class="item greene swiper-slide">5</li>
+        <li class="item yellow swiper-slide">6</li>
+        <li class="item violet swiper-slide">7</li>
+        <li class="item gray swiper-slide">8</li>
+      </ul>
+      <div class="swiper-pagination"></div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
     <script>
-      const swiper = new Swiper('.myS', {
+      var swiper = new Swiper('.mySwiper', {
+        autoplay: true,
+        // breakpoints: {
+        //   // when window width is >= 320px
+        //   700: {
+        //     slidesPerView: 2,
+        //     spaceBetween: 20,
+        //   },
+        //   // when window width is >= 480px
+        //   900: {
+        //     slidesPerView: 3,
+        //     spaceBetween: 30,
+        //   },
+        //   // when window width is >= 640px
+        //   1200: {
+        //     slidesPerView: 4,
+        //     spaceBetween: 40,
+        //   },
+        // },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper('.mySw', {
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
         },
-        loop: true,
-        autoplay: {
-          delay: 500,
-          pauseOnMouseEnter: true,
-        },
-        speed: 100,
-        autoplaySpeed: 500,
       });
     </script>
   </body>

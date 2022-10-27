@@ -53,13 +53,10 @@ body {
 }
 
 .swiper-pagination-bullet {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 
 .swiper-pagination-bullet-active {
-  background-image: url(https://picsum.photos/seed/picsum/200/300);
-  background-size: cover;
-  background-position: center;
-  border-radius: unset;
+  background-color: purple;
 }
