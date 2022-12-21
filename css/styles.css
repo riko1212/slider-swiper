@@ -53,10 +53,12 @@ body {
 }
 
 .swiper-pagination-bullet {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
+  opacity: 0.5;
+  background-color: rgb(109, 141, 80);
 }
 
 .swiper-pagination-bullet-active {
-  background-color: purple;
+  opacity: 1;
 }

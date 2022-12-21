@@ -12,7 +12,7 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="swiper mySwiper wrapper">
+    <div class="wrapper swiper myS">
       <ul class="list swiper-wrapper">
         <li class="item blue swiper-slide">1</li>
         <li class="item red swiper-slide">2</li>
@@ -24,10 +24,9 @@
         <li class="item gray swiper-slide">8</li>
       </ul>
     </div>
-
-    <div class="swiper mySw wrapper">
+    <div class="wrapper swiper mySlider">
       <ul class="list swiper-wrapper">
-        <li class="item blue swiper-slide"></li>
+        <li class="item blue swiper-slide">1</li>
         <li class="item red swiper-slide">2</li>
         <li class="item brown swiper-slide">3</li>
         <li class="item tomato swiper-slide">4</li>
@@ -38,37 +37,24 @@
       </ul>
       <div class="swiper-pagination"></div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
     <script>
-      var swiper = new Swiper('.mySwiper', {
-        autoplay: true,
-        // breakpoints: {
-        //   // when window width is >= 320px
-        //   700: {
-        //     slidesPerView: 2,
-        //     spaceBetween: 20,
-        //   },
-        //   // when window width is >= 480px
-        //   900: {
-        //     slidesPerView: 3,
-        //     spaceBetween: 30,
-        //   },
-        //   // when window width is >= 640px
-        //   1200: {
-        //     slidesPerView: 4,
-        //     spaceBetween: 40,
-        //   },
-        // },
+      var swiper = new Swiper('.myS', {
+        autoplay: {
+          delay: 1000,
+        },
+
+        loop: true,
       });
     </script>
     <script>
-      var swiper = new Swiper('.mySw', {
+      var swiper = new Swiper('.mySlider', {
+        // autoplay: true,
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
         },
+        loop: true,
       });
     </script>
   </body>
