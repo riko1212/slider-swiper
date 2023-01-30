@@ -12,7 +12,7 @@ body {
 }
 
 .wrapper {
-  width: 500px;
+  width: 600px;
   outline: 2px solid red;
   margin: 0 auto;
 }
@@ -52,13 +52,7 @@ body {
   background-color: gray;
 }
 
-.swiper-pagination-bullet {
-  width: 16px;
-  height: 16px;
-  opacity: 0.5;
-  background-color: rgb(109, 141, 80);
-}
-
-.swiper-pagination-bullet-active {
-  opacity: 1;
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: '\27A4';
 }
