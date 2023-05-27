@@ -5,13 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     <link href="./css/styles.css" rel="stylesheet" />
     <title>Document</title>
   </head>
   <body>
+    <div class="swiper mySwiper wrapper">
+      <ul class="list swiper-wrapper">
+        <li class="item blue swiper-slide">1</li>
+        <li class="item red swiper-slide">2</li>
+        <li class="item brown swiper-slide">3</li>
+        <li class="item tomato swiper-slide">4</li>
+        <li class="item green swiper-slide">5</li>
+        <li class="item yellow swiper-slide">6</li>
+        <li class="item violet swiper-slide">7</li>
+        <li class="item gray swiper-slide">8</li>
+      </ul>
+      <div class="swiper-pagination"></div>
+    </div>
+
     <div class="swiper myS wrapper">
       <ul class="list swiper-wrapper">
         <li class="item blue swiper-slide">1</li>
@@ -23,19 +37,36 @@
         <li class="item violet swiper-slide">7</li>
         <li class="item gray swiper-slide">8</li>
       </ul>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper('.myS', {
-        autoplay: {
-          delay: 500,
-        },
+      var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 3,
+        spaceBetween: 18,
         loop: true,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+        autoplay: {
+          delay: 1000,
+          pauseOnMouseEnter: true,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+
+      var swiperNew = new Swiper('.myS', {
+        slidesPerView: 4,
+        spaceBetween: 28,
+        loop: true,
+        autoplay: {
+          delay: 2000,
+          pauseOnMouseEnter: true,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
         },
       });
     </script>
